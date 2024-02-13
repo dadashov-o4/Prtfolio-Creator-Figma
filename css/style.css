@@ -490,10 +490,32 @@ footer .blogs .blogs-right-side .blog-card .read {
         max-width: 100%;
     }
 
+    .introduction .introduction-left-side .book-a-call {
+        margin-left: 10px;
+    }
+
     footer .blogs {
         display: flex;
         flex-direction: column;
     }
+
+
+    .projects .all-projects .all-projects-top-left h5 {
+        text-align: center;
+    }
+
+    .projects .all-projects .all-projects-top-left h1 {
+        text-align: center;
+    }
+
+    .projects .all-projects .all-projects-top .view-all-projects {
+        margin-left: 20px;
+    }
+
+    .projects .project-cards .card {
+        margin-left: 20px;
+    }
+
 
 }
 
