@@ -1,5 +1,5 @@
 :root {
-    --grey-for-article: #666;
+    --grey-for-p: #666;
 }
 
 * {
@@ -15,6 +15,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 
 /*! HEADER start */
 
@@ -47,6 +49,11 @@ header .nav {
 
 
 
+.introduction .introduction-left-side {
+    margin-left: 10px;
+}
+
+
 .introduction .introduction-left-side h1 {
     font-weight: 700;
     margin-bottom: 20px;
@@ -57,8 +64,8 @@ header .nav {
     color: #ff8a56;
 }
 
-.introduction .introduction-left-side article {
-    color: var(--grey-for-article);
+.introduction .introduction-left-side p {
+    color: var(--grey-for-p);
     font-weight: 400;
 }
 
@@ -98,6 +105,11 @@ header .nav {
 
 
 /*! PARTNERS start */
+
+.partners {
+    margin-top: 60px;
+}
+
 .partners h4 {
     text-align: center;
     font-size: 18px;
@@ -106,15 +118,15 @@ header .nav {
 }
 
 .partners .companies {
-    display: flex;
-    justify-content: center;
     margin-top: 35px;
+    margin-left: 15px;
+}
+
+.partners .companies img {
+    margin-top: 10px;
 }
 
 
-.partners .companies img:nth-child(odd) {
-    display: none;
-}
 
 /*! PARTNERS end */
 
@@ -153,7 +165,7 @@ header .nav {
     font-size: 20px;
 }
 
-.services .card article {
+.services .card p {
     font-weight: 400;
     font-size: 16px;
     color: #666666;
@@ -207,6 +219,14 @@ header .nav {
 
 .projects .all-projects .all-projects-top .view-all-projects a:hover {
     color: #f2b196;
+}
+
+.projects .all-projects .all-projects-top .view-all-projects a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
 }
 
 .projects .all-projects .project-cards .card {
@@ -441,7 +461,7 @@ footer .blogs .blogs-left-side {
 }
 
 footer .blogs {
-    padding: 260px 10px;
+    padding: 260px 10px 20px;
 }
 
 footer .blogs .blogs-right-side .blog-card {
@@ -457,7 +477,7 @@ footer .blogs .blogs-right-side .blog-card .read {
 
 
 
-
+/*! RESPONSIVE FOR NAV */
 
 @media(max-width: 568px) {
     header nav {
@@ -484,15 +504,42 @@ footer .blogs .blogs-right-side .blog-card .read {
 
 
 
+/*! RESPONSIVE FOR DEVICES */
 
-@media(max-width: 575px) {
+
+@media(min-width: 325px)  and (max-width: 414px){
+    .partners .companies {
+        margin-left: 20px;
+    }
+
+    .partners .companies img {
+        margin-left: 10px;
+    }
+
+
+
+}
+
+@media(min-width: 414px) and (max-width: 576px){
+    .partners .companies {
+        margin-left: 40px;
+    }
+
+    .partners .companies img {
+        margin-left: 10px;
+    }
+}
+
+
+
+@media(max-width: 576px) {
     .container {
         max-width: 100%;
     }
 
-    .introduction .introduction-left-side .book-a-call {
-        margin-left: 10px;
-    }
+
+
+
 
     footer .blogs {
         display: flex;
@@ -509,7 +556,9 @@ footer .blogs .blogs-right-side .blog-card .read {
     }
 
     .projects .all-projects .all-projects-top .view-all-projects {
-        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .projects .project-cards .card {
@@ -533,8 +582,14 @@ footer .blogs .blogs-right-side .blog-card .read {
         flex-direction: row;
     }
 
+
+    .introduction .introduction-left-side {
+        margin-left: 10px;
+    }
+
+
     .introduction .introduction-left-side h1 {
-        font-size: 38px;
+        font-size: 37px;
         text-align: left;
     }
 
@@ -546,8 +601,8 @@ footer .blogs .blogs-right-side .blog-card .read {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side article {
-        font-size: 15px;
+    .introduction .introduction-left-side  p{
+        font-size: 13px;
     }
 
     .introduction .introduction-right-side img {
@@ -794,8 +849,8 @@ footer .blogs .blogs-right-side .blog-card .read {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side article {
-        font-size: 19px;
+    .introduction .introduction-left-side p {
+        font-size: 24px;
     }
 
     .introduction .introduction-right-side img {
@@ -1032,6 +1087,10 @@ footer .blogs .blogs-right-side .blog-card .read {
         margin: 0 auto;
     }
 
+    header nav a {
+        margin-left: 0px;
+    }
+
     .introduction {
         display: flex;
     }
@@ -1048,8 +1107,8 @@ footer .blogs .blogs-right-side .blog-card .read {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side article {
-        font-size: 19px;
+    .introduction .introduction-left-side p {
+        font-size: 25px;
     }
 
     .introduction .introduction-right-side img {
@@ -1290,15 +1349,15 @@ footer .blogs .blogs-right-side .blog-card .read {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side article {
-        font-size: 19px;
+    .introduction .introduction-left-side p {
+        font-size: 24px;
     }
 
     .introduction .introduction-right-side img {
         width: 600px;
     }
 
-    .introduction .introduction-left-side article {
+    .introduction .introduction-left-side p {
         padding-right: 100px;
     }
 
