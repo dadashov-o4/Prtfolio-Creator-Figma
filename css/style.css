@@ -29,8 +29,9 @@ header {
 
 header nav a {
     margin-right: 20px;
-    color: #000;
+    color: #363636;
     font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
 header nav a:hover {
@@ -1330,6 +1331,10 @@ footer .blogs .blogs-right-side .blog-card .read {
     .container {
         max-width: 1320px;
         margin: 0 auto;
+    }
+
+    header nav a {
+        margin-right: 40px;
     }
 
 
