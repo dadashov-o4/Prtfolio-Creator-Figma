@@ -222,6 +222,8 @@ header nav a .fa-arrow-right {
     transition: all .3s ease-in;
 }
 
+
+
 .projects .all-projects .all-projects-top .view-all-projects a:hover {
     color: #f2b196;
 }
@@ -1395,7 +1397,6 @@ footer .blogs .blogs-right-side .blog-card .read {
     .projects .all-projects .all-projects-top {
         display: flex;
         padding: 0 80px;
-
     }
 
 
@@ -1421,7 +1422,7 @@ footer .blogs .blogs-right-side .blog-card .read {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         margin-top: 60px;
-        padding-left: 50px;
+        
     }
 
     .projects .project-cards .card {
@@ -1450,6 +1451,18 @@ footer .blogs .blogs-right-side .blog-card .read {
         font-weight: 700;
         font-size: 24px;
     }
+
+    .projects .project-cards .card img{
+        width: 510px !important; 
+        height: auto;
+        margin-left: 0;
+    }
+
+    .projects .project-cards .card {
+        padding-top: -20px !important;
+        overflow: hidden;
+    }
+
 
 
     .projects .project-cards .card .upper-part img {
