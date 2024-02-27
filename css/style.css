@@ -211,6 +211,11 @@ header nav a .fa-arrow-right {
 
 /*! projects start */
 
+.projects .project-cards .card {
+    transition: all .4s ease-in;
+}
+
+
 .projects .project-cards .card:hover {
     -webkit-box-shadow: 13px 10px 5px 0px rgba(214, 207, 214, 0.75);
     -moz-box-shadow: 13px 10px 5px 0px rgba(214, 207, 214, 0.75);
@@ -218,9 +223,6 @@ header nav a .fa-arrow-right {
     cursor: pointer;
 }
 
-.projects .project-cards .card {
-    transition: all .3s ease-in;
-}
 
 
 
@@ -244,6 +246,11 @@ header nav a .fa-arrow-right {
     color: #FF5E69;
 }
 
+
+.chevrons img {
+    transition: all 0.4s ease-in;
+}
+
 .chevrons img:hover {
     -webkit-box-shadow: 5px 3px 5px 0px rgba(250, 247, 250, 1);
     -moz-box-shadow: 5px 3px 5px 0px rgba(250, 247, 250, 1);
@@ -255,30 +262,25 @@ header nav a .fa-arrow-right {
     margin-left: 12px;
 }
 
-.chevrons img {
-    transition: all 0.3s ease-in;
-}
+
 
 /*! PROJECTS end */
 
 
 /*! BLOGS start */
 
-footer .blogs {
+section.latest-blogs .blogs {
     display: flex;
     background-color: #000;
 }
 
-footer .blogs .blogs-right-side .blog-card .read a:hover {
+section.latest-blogs .blogs .blogs-right-side .blog-card .read a:hover {
     color: #FFA84B;
 }
 
-footer .blogs .blogs-left-side .card-view a:hover {
+section.latest-blogs .blogs-left-side .card-view a:hover {
     color: #FFA84B;
 }
-
-
-
 
 /*! BLOGS end */
 
@@ -416,13 +418,13 @@ footer .blogs .blogs-left-side .card-view a:hover {
 
 /* ! PROJECTS end */
 
-/*! FOOTER start */
+/*! LATEST BLOGS start */
 
-footer {
+section.latest-blogs {
     margin-top: -260px;
 }
 
-footer .blogs .blogs-left-side h3 {
+section.latest-blogs .blogs .blogs-left-side h3 {
     color: #FFA84B;
     font-weight: 700;
     font-size: 18px;
@@ -430,7 +432,7 @@ footer .blogs .blogs-left-side h3 {
     letter-spacing: 4px;
 }
 
-footer .blogs .blogs-left-side h1 {
+section.latest-blogs .blogs .blogs-left-side h1 {
 
     color: #fff;
     font-weight: 700;
@@ -438,49 +440,49 @@ footer .blogs .blogs-left-side h1 {
     width: 280px;
 }
 
-footer a {
+section.latest-blogs a {
     display: inline-block;
     color: #fff;
 }
 
-footer a .fa-arrow-right {
+section.latest-blogs a .fa-arrow-right {
     margin-left: 10px;
 }
 
-footer .blogs .blogs-right-side p {
+section.latest-blogs .blogs .blogs-right-side p {
     color: #FFFFFFB2;
 }
 
-footer .blogs .blogs-right-side h3 {
+section.latest-blogs .blogs .blogs-right-side h3 {
     color: #fff;
 }
 
-footer .blogs .blogs-right-side {
+section.latest-blogs .blogs .blogs-right-side {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 50px;
     width: 250px;
 }
 
-footer .blogs .blogs-left-side {
+section.latest-blogs .blogs .blogs-left-side {
     margin-top: 80px;
     height: 250px;
 }
 
-footer .blogs {
+section.latest-blogs .blogs {
     padding: 260px 10px 20px;
 }
 
-footer .blogs .blogs-right-side .blog-card {
+section.latest-blogs .blogs .blogs-right-side .blog-card {
     border-bottom: 1px solid #8b88886e;
     margin-top: 80px;
 }
 
-footer .blogs .blogs-right-side .blog-card .read {
+section.latest-blogs .blogs .blogs-right-side .blog-card .read {
     margin: 40px 0 30px;
 }
 
-/*! FOOTER end*/
+/*! LATEST BLOGS end*/
 
 
 
@@ -548,7 +550,7 @@ footer .blogs .blogs-right-side .blog-card .read {
 
 
 
-    footer .blogs {
+    section.latest-blogs .blogs {
         display: flex;
         flex-direction: column;
     }
@@ -768,13 +770,13 @@ footer .blogs .blogs-right-side .blog-card .read {
 
     /* ! PROJECTS end */
 
-    /*! FOOTER start */
+    /*! LATEST BLOGS start */
 
-    footer {
+    section.latest-blogs {
         margin-top: -260px;
     }
 
-    footer .blogs .blogs-left-side h3 {
+    section.latest-blogs .blogs .blogs-left-side h3 {
         color: #FFA84B;
         font-weight: 700;
         font-size: 18px;
@@ -782,54 +784,54 @@ footer .blogs .blogs-right-side .blog-card .read {
         letter-spacing: 4px;
     }
 
-    footer .blogs .blogs-left-side h1 {
+    section.latest-blogs .blogs .blogs-left-side h1 {
         color: #fff;
         font-weight: 700;
         font-size: 44px;
         width: 350px;
     }
 
-    footer a {
+    section.latest-blogs a {
         display: inline-block;
         color: #fff;
     }
 
-    footer a .fa-arrow-right {
+    section.latest-blogs a .fa-arrow-right {
         margin-left: 10px;
     }
 
-    footer .blogs .blogs-right-side p {
+    section.latest-blogs .blogs .blogs-right-side p {
         color: #FFFFFFB2;
     }
 
-    footer .blogs .blogs-right-side h3 {
+    section.latest-blogs .blogs .blogs-right-side h3 {
         color: #fff;
     }
 
-    footer .blogs .blogs-right-side {
+    section.latest-blogs .blogs .blogs-right-side {
         margin-top: 120px;
         margin-left: 0px;
         width: 600px;
     }
 
-    footer .blogs .blogs-left-side {
+    section.latest-blogs .blogs .blogs-left-side {
         margin-top: 80px;
     }
 
-    footer .blogs {
+    section.latest-blogs .blogs {
         padding: 260px 40px;
     }
 
-    footer .blogs .blogs-right-side .blog-card {
+    section.latest-blogs .blogs .blogs-right-side .blog-card {
         border-bottom: 1px solid #8b88886e;
         margin-top: 80px;
     }
 
-    footer .blogs .blogs-right-side .blog-card .read {
+    section.latest-blogs .blogs .blogs-right-side .blog-card .read {
         margin: 40px 0 30px;
     }
 
-    /*! FOOTER end*/
+    /*! LATEST BLOGS end*/
 }
 
 @media(min-width: 992px) {
@@ -1022,13 +1024,13 @@ footer .blogs .blogs-right-side .blog-card .read {
 
     /* ! PROJECTS end */
 
-    /*! FOOTER start */
+    /*! LATEST BLOGS start */
 
-    footer {
+    section.latest-blogs {
         margin-top: -260px;
     }
 
-    footer .blogs .blogs-left-side h3 {
+    section.latest-blogs .blogs .blogs-left-side h3 {
         color: #FFA84B;
         font-weight: 700;
         font-size: 22px;
@@ -1036,54 +1038,54 @@ footer .blogs .blogs-right-side .blog-card .read {
         letter-spacing: 4px;
     }
 
-    footer .blogs .blogs-left-side h1 {
+    section.latest-blogs .blogs .blogs-left-side h1 {
         color: #fff;
         font-weight: 700;
         font-size: 54px;
         width: 350px;
     }
 
-    footer a {
+    section.latest-blogs a {
         display: inline-block;
         color: #fff;
     }
 
-    footer a .fa-arrow-right {
+    section.latest-blogs a .fa-arrow-right {
         margin-left: 10px;
     }
 
-    footer .blogs .blogs-right-side p {
+    section.latest-blogs .blogs .blogs-right-side p {
         color: #FFFFFFB2;
     }
 
-    footer .blogs .blogs-right-side h3 {
+    section.latest-blogs .blogs .blogs-right-side h3 {
         color: #fff;
     }
 
-    footer .blogs .blogs-right-side {
+    section.latest-blogs .blogs .blogs-right-side {
         margin-top: 120px;
         margin-left: 250px;
         width: 600px;
     }
 
-    footer .blogs .blogs-left-side {
+    section.latest-blogs .blogs .blogs-left-side {
         margin-top: 80px;
     }
 
-    footer .blogs {
+    section.latest-blogs .blogs {
         padding: 260px 80px;
     }
 
-    footer .blogs .blogs-right-side .blog-card {
+    section.latest-blogs .blogs .blogs-right-side .blog-card {
         border-bottom: 1px solid #8b88886e;
         margin-top: 80px;
     }
 
-    footer .blogs .blogs-right-side .blog-card .read {
+    section.latest-blogs .blogs .blogs-right-side .blog-card .read {
         margin: 40px 0 30px;
     }
 
-    /*! FOOTER end*/
+    /*! LATEST BLOGS end*/
 
 
 }
@@ -1268,13 +1270,13 @@ footer .blogs .blogs-right-side .blog-card .read {
 
     /* ! PROJECTS end */
 
-    /*! FOOTER start */
+    /*! LATEST BLOGS start */
 
-    footer {
+    section.latest-blogs {
         margin-top: -260px;
     }
 
-    footer .blogs .blogs-left-side h3 {
+    section.latest-blogs .blogs .blogs-left-side h3 {
         color: #FFA84B;
         font-weight: 700;
         font-size: 22px;
@@ -1282,55 +1284,55 @@ footer .blogs .blogs-right-side .blog-card .read {
         letter-spacing: 4px;
     }
 
-    footer .blogs .blogs-left-side h1 {
+    section.latest-blogs .blogs .blogs-left-side h1 {
         color: #fff;
         font-weight: 700;
         font-size: 54px;
     }
 
-    footer a {
+    section.latest-blogs a {
         display: inline-block;
         color: #fff;
     }
 
-    footer a .fa-arrow-right {
+    section.latest-blogs a .fa-arrow-right {
         margin-left: 10px;
     }
 
-    footer .blogs .blogs-right-side p {
+    section.latest-blogs .blogs .blogs-right-side p {
         color: #FFFFFFB2;
     }
 
-    footer .blogs .blogs-right-side h3 {
+    section.latest-blogs .blogs .blogs-right-side h3 {
         color: #fff;
     }
 
-    footer .blogs .blogs-right-side {
+    section.latest-blogs .blogs .blogs-right-side {
         margin-top: 120px;
         margin-left: 220px;
         width: 600px;
     }
 
-    footer .blogs .blogs-left-side {
+    section.latest-blogs .blogs .blogs-left-side {
         margin-top: 80px;
         width: 400px;
 
     }
 
-    footer .blogs {
+    section.latest-blogs .blogs {
         padding: 260px 80px;
     }
 
-    footer .blogs .blogs-right-side .blog-card {
+    section.latest-blogs .blogs .blogs-right-side .blog-card {
         border-bottom: 1px solid #8b88886e;
         margin-top: 80px;
     }
 
-    footer .blogs .blogs-right-side .blog-card .read {
+    section.latest-blogs .blogs .blogs-right-side .blog-card .read {
         margin: 40px 0 30px;
     }
 
-    /*! FOOTER end */
+    /*! LATEST BLOGS end */
 }
 
 @media(min-width: 1400px) {
@@ -1515,13 +1517,13 @@ footer .blogs .blogs-right-side .blog-card .read {
 
     /* ! PROJECTS end */
 
-    /*! FOOTER start */
+    /*! LATEST BLOGS start */
 
-    footer {
+    section.latest-blogs {
         margin-top: -260px;
     }
 
-    footer .blogs .blogs-left-side h3 {
+    section.latest-blogs .blogs .blogs-left-side h3 {
         color: #FFA84B;
         font-weight: 700;
         font-size: 22px;
@@ -1529,54 +1531,54 @@ footer .blogs .blogs-right-side .blog-card .read {
         letter-spacing: 4px;
     }
 
-    footer .blogs .blogs-left-side h1 {
+    section.latest-blogs .blogs .blogs-left-side h1 {
         color: #fff;
         font-weight: 700;
         font-size: 54px;
     }
 
-    footer a {
+    section.latest-blogs a {
         display: inline-block;
         color: #fff;
     }
 
-    footer a .fa-arrow-right {
+    section.latest-blogs a .fa-arrow-right {
         margin-left: 10px;
     }
 
-    footer .blogs .blogs-right-side p {
+    section.latest-blogs .blogs .blogs-right-side p {
         color: #FFFFFFB2;
     }
 
-    footer .blogs .blogs-right-side h3 {
+    section.latest-blogs .blogs .blogs-right-side h3 {
         color: #fff;
     }
 
-    footer .blogs .blogs-right-side {
+    section.latest-blogs .blogs .blogs-right-side {
         margin-top: 120px;
         margin-left: 300px;
         width: 600px;
     }
 
-    footer .blogs .blogs-left-side {
+    section.latest-blogs .blogs .blogs-left-side {
         margin-top: 80px;
 
     }
 
-    footer .blogs {
+    section.latest-blogs .blogs {
         padding: 260px 80px;
     }
 
-    footer .blogs .blogs-right-side .blog-card {
+    section.latest-blogs .blogs .blogs-right-side .blog-card {
         border-bottom: 1px solid #8b88886e;
         margin-top: 80px;
     }
 
-    footer .blogs .blogs-right-side .blog-card .read {
+    section.latest-blogs .blogs .blogs-right-side .blog-card .read {
         margin: 40px 0 30px;
     }
 
-    /*! FOOTER end */
+    /*! LATEST BLOGS end */
 
 
 }
