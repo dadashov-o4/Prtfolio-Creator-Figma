@@ -484,6 +484,36 @@ section.latest-blogs .blogs .blogs-right-side .blog-card .read {
 
 /*! LATEST BLOGS end*/
 
+/*! "TAHT'S ME " start */
+
+section.thats-me {
+    padding: 100px;
+}
+
+section.thats-me .upper-part .left h5 {
+    font-weight: 700;
+    font-size: 22px;
+    color: #FF5E69;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+section.thats-me .upper-part .left h1 {
+    font-weight: 700;
+    font-size: 54px;
+    margin-top: 0;
+}
+
+section.thats-me .upper-part  p {
+    line-height: 1.8;
+}
+
+
+
+
+/*! "TAHT'S ME " end */
+
 
 
 /*! RESPONSIVE FOR NAV */
@@ -1581,4 +1611,40 @@ section.latest-blogs .blogs .blogs-right-side .blog-card .read {
     /*! LATEST BLOGS end */
 
 
+    /*! "THAT'S ME start */
+
+    section.thats-me {
+        padding: 100px;
+    }
+    
+    section.thats-me .upper-part {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    section.thats-me .upper-part  p {
+        font-weight: 400;
+        font-size: 22px;
+        color: #666666;
+        align-items: center;
+        width: 630px;
+        margin-right: 60px;
+        margin-top: 40px;
+    }
+    
+    section.thats-me .bottom-part {
+        display: flex;
+        margin-top: 60px;
+    }
+    
+    section.thats-me .bottom-part .phone,.desk,.laptop,.girls  {
+        margin: 10px;
+    }
+
+    section.thats-me  .bottom-part .two-in-one .girls {
+        margin-top: 12px;
+    }
+    
+
+    /*! "THAT'S ME end */
 }
