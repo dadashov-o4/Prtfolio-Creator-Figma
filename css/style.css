@@ -505,14 +505,162 @@ section.thats-me .upper-part .left h1 {
     margin-top: 0;
 }
 
-section.thats-me .upper-part  p {
+section.thats-me .upper-part p {
     line-height: 1.8;
 }
 
 
-
-
 /*! "TAHT'S ME " end */
+
+
+/*! EXPERIENCES start */
+
+section.experiences {
+    display: flex;
+    align-items: center;
+    padding: 0 100px 40px;
+}
+section.experiences div.line {
+    width: 100%;
+    height: .5px;
+    background-color: #dedede;
+}
+
+
+section.experiences .education {
+    display: flex;
+    flex-direction: column;
+}
+
+section.experiences .education .header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+section.experiences .education .header h4 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+section.experiences .education .header div.books {
+    width: 50px;
+    margin-right: 20px;
+}
+
+section.experiences .education .header div.books img {
+    width: 100%;
+}
+
+section.experiences .education .card {
+    width: 583px;
+    padding: 30px 0;
+}
+
+section.experiences .education .card h6 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+section.experiences .education .card p {
+    font-size: 16px;
+    color: #6f6f6f;
+}
+section.experiences .education .card p:nth-child(2) {
+    margin-right: 50px;
+}
+
+section.experiences .education .card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------------------------- */
+
+
+section.experiences .work {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+section.experiences .work .header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+section.experiences .work .header h4 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+section.experiences .work .header div.bag {
+    width: 50px;
+    margin-right: 20px;
+}
+
+section.experiences .work .header div.bag img {
+    width: 100%;
+}
+
+section.experiences .work .card {
+    display: flex;
+    width: 583px;
+    padding: 30px 0;
+}
+
+section.experiences .work .card .rocket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+section.experiences .work .card .music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+section.experiences .work .card .crown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+section.experiences .work .card .left h6 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+section.experiences .work .card .left p {
+    font-size: 16px;
+    color: #6f6f6f;
+}
+section.experiences .work .card p:nth-child(2) {
+    margin-right: 50px;
+}
+
+section.experiences .work .card .left div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.experiences .work .card .left {
+    width: 100%;
+}
+
+/*! EXPERIENCES end */
+
 
 
 
@@ -546,7 +694,7 @@ section.thats-me .upper-part  p {
 /*! RESPONSIVE FOR DEVICES */
 
 
-@media(min-width: 325px)  and (max-width: 414px){
+@media(min-width: 325px) and (max-width: 414px) {
     .partners .companies {
         margin-left: 20px;
     }
@@ -559,7 +707,7 @@ section.thats-me .upper-part  p {
 
 }
 
-@media(min-width: 414px) and (max-width: 576px){
+@media(min-width: 414px) and (max-width: 576px) {
     .partners .companies {
         margin-left: 40px;
     }
@@ -640,7 +788,7 @@ section.thats-me .upper-part  p {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side  p{
+    .introduction .introduction-left-side p {
         font-size: 13px;
     }
 
@@ -1454,7 +1602,7 @@ section.thats-me .upper-part  p {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         margin-top: 60px;
-        
+
     }
 
     .projects .project-cards .card {
@@ -1484,8 +1632,8 @@ section.thats-me .upper-part  p {
         font-size: 24px;
     }
 
-    .projects .project-cards .card img{
-        width: 510px !important; 
+    .projects .project-cards .card img {
+        width: 510px !important;
         height: auto;
         margin-left: 0;
     }
@@ -1616,13 +1764,13 @@ section.thats-me .upper-part  p {
     section.thats-me {
         padding: 100px;
     }
-    
+
     section.thats-me .upper-part {
         display: flex;
         justify-content: space-between;
     }
-    
-    section.thats-me .upper-part  p {
+
+    section.thats-me .upper-part p {
         font-weight: 400;
         font-size: 22px;
         color: #666666;
@@ -1631,20 +1779,23 @@ section.thats-me .upper-part  p {
         margin-right: 60px;
         margin-top: 40px;
     }
-    
+
     section.thats-me .bottom-part {
         display: flex;
         margin-top: 60px;
     }
-    
-    section.thats-me .bottom-part .phone,.desk,.laptop,.girls  {
+
+    section.thats-me .bottom-part .phone,
+    .desk,
+    .laptop,
+    .girls {
         margin: 10px;
     }
 
-    section.thats-me  .bottom-part .two-in-one .girls {
+    section.thats-me .bottom-part .two-in-one .girls {
         margin-top: 12px;
     }
-    
+
 
     /*! "THAT'S ME end */
 }
