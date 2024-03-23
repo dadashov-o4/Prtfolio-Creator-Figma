@@ -54,27 +54,27 @@ header nav a .fa-arrow-right {
 
 
 
-.introduction .introduction-left-side {
+.introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side {
     margin-left: 10px;
 }
 
 
-.introduction .introduction-left-side h1 {
+.introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side h1 {
     font-weight: 700;
     margin-bottom: 20px;
     font-size: 35px;
 }
 
-.introduction .introduction-left-side h1 span {
+.introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side h1 span {
     color: #ff8a56;
 }
 
-.introduction .introduction-left-side p {
+.introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side p {
     color: var(--grey-for-p);
     font-weight: 400;
 }
 
-.introduction .book {
+.introduction .swiper .swiper-wrapper .swiper-slide .book {
     display: inline-flex;
     background-color: #222;
     color: #fff;
@@ -86,22 +86,22 @@ header nav a .fa-arrow-right {
 
 }
 
-.introduction .book-a-call a:hover {
+.introduction .swiper .swiper-wrapper .swiper-slide .book-a-call a:hover {
     color: #f2ac8e;
 }
 
-.introduction .cv {
+.introduction .swiper .swiper-wrapper .swiper-slide .cv {
     margin-left: 17px;
     color: #000;
 }
 
-.introduction .cv img {
+.introduction .swiper .swiper-wrapper .swiper-slide .cv img {
     margin-left: 3px;
 
 }
 
 
-.introduction .introduction-right-side img {
+.introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side img {
     width: 300px;
     margin: 0 auto;
 }
@@ -284,12 +284,12 @@ section.latest-blogs .blogs-left-side .card-view a:hover {
 
 /*! BLOGS end */
 
-.introduction {
+.introduction .swiper .swiper-wrapper .swiper-slide {
     display: flex;
     flex-direction: column-reverse;
 }
 
-.introduction .introduction-right-side {
+.introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -510,6 +510,50 @@ section.thats-me .upper-part p {
 }
 
 
+/*------------- */
+
+
+      section.thats-me {
+        padding: 20px;
+    }
+
+ 
+    
+
+    section.thats-me .upper-part p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #666666;
+        align-items: center;
+        width: 630px;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+
+    section.thats-me .upper-part h5 {
+        font-size: 15px;
+    }
+
+    section.thats-me .bottom-part .bottom-left-part {
+        display: flex;
+        margin-top: 60px;
+    }
+
+    section.thats-me .bottom-part .phone,
+    .desk,
+    .laptop,
+    .girls {
+        margin: 5px;
+    }
+
+    section.thats-me .bottom-part .two-in-one .girls {
+        margin-top: 12px;
+    }
+
+
+ 
+
+
 /*! "TAHT'S ME " end */
 
 
@@ -682,6 +726,7 @@ section.partner .jade .about-jade {
 section.partner .jade .about-jade p {
     font-weight: 700;
     font-size: 36px;
+    line-height: 40px;
 }
 section.partner .jade .about-jade .john-franklin {
     margin-top: 100px;
@@ -737,7 +782,6 @@ section.partner .jade .about-jade .john-franklin {
 section.faq {
     background-color: #000;
     color: #fff;
-    padding-bottom: 20px;
 }
 section.faq .up-part {
     padding-top: 40px;
@@ -789,11 +833,11 @@ section.faq .questions .right-questions .card {
     align-items: center;
      padding: 10px 0;
 }   
-section.faq .questions .left-questions .card h4 {
+section.faq .questions .left-questions .card p {
     font-weight: 700;
     font-size: 24px;
 }
-section.faq .questions .right-questions .card h4 {
+section.faq .questions .right-questions .card p {
     font-weight: 700;
     font-size: 24px;
 }
@@ -883,6 +927,8 @@ footer .contain .copyright p {
     }
 }
 
+
+
 @media(min-width: 768px) {
     header nav {
         display: block;
@@ -892,6 +938,8 @@ footer .contain .copyright p {
         display: none;
     }
 }
+
+
 
 
 
@@ -907,8 +955,31 @@ footer .contain .copyright p {
         margin-left: 10px;
     }
 
-
-
+    
+    section.thats-me .bottom-part .phone {
+        width: 127px !important;
+    }
+    section.thats-me .bottom-part .desk {
+        width: 190px !important;
+    }
+    section.thats-me .bottom-part .two-in-one .girls,.laptop {
+        width: 190px !important;
+    }
+    section.thats-me .bottom-part img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part .bottom-left-part {
+        margin-top: 0;
+    }
+    section.thats-me .bottom-part .two-in-one {
+        display: flex;
+    }
+   
+}
+@media(min-width: 380px) and (max-width: 414px) {
+    section.thats-me .bottom-part .two-in-one .girls,.laptop {
+        width: 158px !important;
+    }  
 }
 
 @media(min-width: 414px) and (max-width: 576px) {
@@ -918,6 +989,22 @@ footer .contain .copyright p {
 
     .partners .companies img {
         margin-left: 10px;
+    }
+
+    section.thats-me .bottom-part .phone {
+        width: 140px !important;
+    }
+    section.thats-me .bottom-part .desk {
+        width: 210px !important;
+    }
+    section.thats-me .bottom-part .two-in-one .girls,.laptop {
+        width: 175px !important;
+    }
+    section.thats-me .bottom-part img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part .bottom-left-part {
+        margin-top: 0;
     }
 }
 
@@ -957,7 +1044,54 @@ footer .contain .copyright p {
     }
 
 
+
+    section.thats-me .upper-part p {
+        width: 100%;
+        text-align: center;
+    }
+    section.thats-me .upper-part h1 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    section.thats-me .upper-part h5 {
+        text-align: center;
+    }
+   
+
+    section.thats-me .bottom-part .two-in-one .girls {
+        width: 300px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls img {
+        width: 100%;
+    }
+   
+    section.thats-me .bottom-part .phone {
+        width: 107px;
+    }
+    section.thats-me .bottom-part .desk {
+        width: 160px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls,.laptop {
+        width: 190px;
+    }
+    section.thats-me .bottom-part img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part .bottom-left-part {
+        margin-top: 0;
+    }
+    section.thats-me .bottom-part .two-in-one {
+        display: flex;
+    }
+    section.thats-me .bottom-part .two-in-one .girls {
+        margin-top: 1px;
+    }
+    section.thats-me .bottom-part .two-in-one .laptop {
+        margin-top: 1px;
+    }
+
 }
+
 
 
 
@@ -968,35 +1102,35 @@ footer .contain .copyright p {
     }
 
     /*! INTRODUCTION start */
-    .introduction {
+    .introduction .swiper .swiper-wrapper .swiper-slide {
         display: flex;
         flex-direction: row;
     }
 
 
-    .introduction .introduction-left-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side {
         margin-left: 10px;
     }
 
 
-    .introduction .introduction-left-side h1 {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side h1 {
         font-size: 37px;
         text-align: left;
     }
 
-    .introduction .introduction-left-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side {
         padding: 20px 0;
     }
 
-    .introduction .introduction-right-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side p {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side p {
         font-size: 13px;
     }
 
-    .introduction .introduction-right-side img {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side img {
         width: 400px;
         height: 420px;
     }
@@ -1214,6 +1348,121 @@ footer .contain .copyright p {
     }
 
     /*! LATEST BLOGS end*/
+
+    
+         /*! "THAT'S ME start */
+
+         section.thats-me {
+            padding: 40px;
+        }
+    
+        section.thats-me .upper-part {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+    
+        section.thats-me .upper-part p {
+            font-weight: 400;
+            font-size: 15px;
+            color: #666666;
+            align-items: center;
+            width: 630px;
+            margin-right: 5px;
+            margin-top: 40px;
+        }
+    
+        section.thats-me .bottom-part .bottom-left-part {
+            display: flex;
+            margin-top: 60px;
+        }
+    
+        section.thats-me .bottom-part .phone,
+        .desk,
+        .laptop,
+        .girls {
+            margin: 5px;
+        }
+    
+        section.thats-me .bottom-part .two-in-one .girls {
+            margin-top: 12px;
+        }
+    
+    
+        /*! "THAT'S ME end */
+
+}
+
+/* @media(max-width: 768px) {
+    section.thats-me .upper-part p {
+        width: 300px;
+    }
+    section.thats-me .upper-part h1 {
+        margin-bottom: 20px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls {
+        width: 300px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part {
+        display: flex;
+    }
+    section.thats-me .bottom-part .phone {
+        width: 194px;
+    }
+    section.thats-me .bottom-part .desk {
+        width: 290px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls,.laptop {
+        width: 190px;
+    }
+    section.thats-me .bottom-part img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part .bottom-left-part {
+        margin-top: 0;
+    }
+} */
+
+@media(min-width: 768px) and (max-width: 992px) {
+    section.thats-me .upper-part p {
+        width: 420px;
+    }
+    section.thats-me .upper-part .left h5 {
+        font-size: 15px;
+    }
+    section.thats-me .upper-part .left h1 {
+        font-size: 45px;
+    }
+
+
+    section.thats-me .bottom-part .two-in-one .girls {
+        width: 300px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part {
+        display: flex;
+    }
+    section.thats-me .bottom-part .phone {
+        width: 194px;
+    }
+    section.thats-me .bottom-part .desk {
+        width: 290px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls,.laptop {
+        width: 190px;
+    }
+    section.thats-me .bottom-part img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part .bottom-left-part {
+        margin-top: 0;
+    }
 }
 
 @media(min-width: 992px) {
@@ -1224,27 +1473,27 @@ footer .contain .copyright p {
 
 
     /*! INTRODUCTION start */
-    .introduction {
+    .introduction .swiper .swiper-wrapper .swiper-slide {
         display: flex;
     }
 
-    .introduction .introduction-left-side h1 {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side h1 {
         font-size: 70px;
     }
 
-    .introduction .introduction-left-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side {
         padding: 20px 0;
     }
 
-    .introduction .introduction-right-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side p {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side p {
         font-size: 24px;
     }
 
-    .introduction .introduction-right-side img {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side img {
         width: 300px;
     }
 
@@ -1442,11 +1691,12 @@ footer .contain .copyright p {
 
     section.latest-blogs .blogs .blogs-right-side h3 {
         color: #fff;
+        width: 500px;
     }
 
     section.latest-blogs .blogs .blogs-right-side {
         margin-top: 120px;
-        margin-left: 250px;
+        margin-left: 180px;
         width: 600px;
     }
 
@@ -1455,7 +1705,7 @@ footer .contain .copyright p {
     }
 
     section.latest-blogs .blogs {
-        padding: 260px 80px;
+        padding: 260px 20px 260px 60px;
     }
 
     section.latest-blogs .blogs .blogs-right-side .blog-card {
@@ -1470,6 +1720,77 @@ footer .contain .copyright p {
     /*! LATEST BLOGS end*/
 
 
+         /*! "THAT'S ME start */
+
+         section.thats-me {
+            padding: 40px;
+        }
+    
+        section.thats-me .upper-part {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        section.thats-me .upper-part p {
+            font-weight: 400;
+            font-size: 22px;
+            color: #666666;
+            align-items: center;
+            width: 630px;
+            margin-right: 5px;
+            margin-top: 40px;
+        }
+    
+        section.thats-me .bottom-part .bottom-left-part {
+            display: flex;
+            margin-top: 60px;
+        }
+    
+        section.thats-me .bottom-part .phone,
+        .desk,
+        .laptop,
+        .girls {
+            margin: 5px;
+        }
+    
+        section.thats-me .bottom-part .two-in-one .girls {
+            margin-top: 12px;
+        }
+    
+    
+        /*! "THAT'S ME end */
+
+
+}
+@media(min-width: 992px) and (max-width: 1200px) {
+    section.thats-me .bottom-part .two-in-one .girls {
+        width: 300px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part {
+        display: flex;
+    }
+    section.thats-me .bottom-part .phone {
+        width: 287px;
+    }
+    section.thats-me .bottom-part .desk {
+        width: 430px;
+    }
+    section.thats-me .bottom-part .two-in-one .girls,.laptop {
+        width: 285px;
+    }
+    section.thats-me .bottom-part img {
+        width: 100%;
+    }
+    section.thats-me .bottom-part .bottom-left-part {
+        margin-top: 0;
+    }
+
+    section.thats-me .upper-part p {
+        margin-left: 40px;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -1482,27 +1803,27 @@ footer .contain .copyright p {
         margin-left: 0px;
     }
 
-    .introduction {
+    .introduction .swiper .swiper-wrapper .swiper-slide {
         display: flex;
     }
 
-    .introduction .introduction-left-side h1 {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side h1 {
         font-size: 70px;
     }
 
-    .introduction .introduction-left-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side {
         padding: 20px 0;
     }
 
-    .introduction .introduction-right-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side p {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side p {
         font-size: 25px;
     }
 
-    .introduction .introduction-right-side img {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side img {
         width: 500px;
     }
 
@@ -1715,6 +2036,328 @@ footer .contain .copyright p {
     }
 
     /*! LATEST BLOGS end */
+
+
+     /*! "THAT'S ME start */
+
+     section.thats-me {
+        padding: 40px;
+    }
+
+    section.thats-me .upper-part {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.thats-me .upper-part p {
+        font-weight: 400;
+        font-size: 22px;
+        color: #666666;
+        align-items: center;
+        width: 630px;
+        margin-right: 60px;
+        margin-top: 40px;
+    }
+    section.thats-me .bottom-part .bottom-left-part{
+        display: flex;
+        margin-top: 0;
+    }
+
+    section.thats-me .bottom-part {
+        display: flex;
+    }
+    
+    section.thats-me .bottom-part .phone,
+    .desk,
+    .laptop,
+    .girls {
+        margin: 5px;
+    }
+
+    section.thats-me .bottom-part .two-in-one .girls {
+        margin-top: 12px;
+    }
+
+
+    /*! "THAT'S ME end */
+
+
+        /*! EXPERIENCES start */
+
+section.experiences {
+    padding: 0 70px 40px;
+}
+section.experiences div.line {
+    width: 100%;
+    height: .5px;
+}
+
+
+
+
+section.experiences .education .header {
+
+    margin-left: 20px;
+}
+
+section.experiences .education .header h4 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+section.experiences .education .header div.books {
+    width: 50px;
+    margin-right: 20px;
+}
+
+section.experiences .education .header div.books img {
+    width: 100%;
+}
+
+section.experiences .education .card {
+    width: 540px;
+    padding: 30px 0;
+}
+
+section.experiences .education .card h6 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+section.experiences .education .card p {
+    font-size: 16px;
+}
+section.experiences .education .card p:nth-child(2) {
+    margin-right: 50px;
+}
+
+
+
+/* ------------------------------------- */
+
+
+section.experiences .work {
+    margin-left: 70px;
+}
+
+section.experiences .work .header {
+    margin-left: 20px;
+}
+
+section.experiences .work .header h4 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+section.experiences .work .header div.bag {
+    width: 50px;
+    margin-right: 20px;
+}
+
+section.experiences .work .header div.bag img {
+    width: 100%;
+}
+
+section.experiences .work .card {
+    width: 540px;
+    padding: 30px 0;
+}
+
+section.experiences .work .card .rocket {
+    margin-right: 20px;
+}
+
+section.experiences .work .card .music {
+    margin-right: 20px;
+}
+
+section.experiences .work .card .crown {
+    margin-right: 20px;
+}
+
+section.experiences .work .card .left h6 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+section.experiences .work .card .left p {
+    font-size: 16px;
+}
+section.experiences .work .card p:nth-child(2) {
+    margin-right: 50px;
+}
+
+
+
+section.experiences .work .card .left {
+    width: 100%;
+}
+
+/*! EXPERIENCES end */
+
+
+/*! PARTNER JOE start */
+
+section.partner {
+    padding: 100px;
+}
+section.partner .jade {
+    margin-top: 100px;
+}
+section.partner .jade .photo-jade {
+    height: 100%;
+}
+section.partner .jade .photo-jade img {
+    height: 100%;
+}
+section.partner .jade .about-jade {
+    margin-left: 150px;
+}
+section.partner .jade .about-jade p {
+    font-weight: 700;
+    font-size: 30px;
+}
+section.partner .jade .about-jade .john-franklin {
+    margin-top: 100px;
+}
+section.partner .jade .about-jade .john-franklin .switch a {
+    width: 54px;
+    height: 54px;
+}
+section.partner .jade .about-jade .john-franklin p {
+    font-weight: 400;
+    font-size: 18px;
+}
+section.partner .jade .about-jade .john-franklin h6 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+section.partner .testimonials h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+section.partner .testimonials h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/*! PARTNER JOE end */
+
+
+/*! FAQ start */
+
+
+section.faq .up-part {
+    padding-top: 40px;
+}
+section.faq .up-part h6 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+section.faq .up-part h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0;
+}
+section.faq .questions {
+    padding: 100px 50px;
+}
+section.faq .questions .left-questions {
+    width: 550px;
+    margin-right: 80px;
+}
+section.faq .questions .right-questions {
+    width: 550px;
+}
+section.faq .questions .right-questions .under-line {
+    width: 100%;
+    height: .1px;
+}
+section.faq .questions .left-questions .under-line {
+    width: 100%;
+    height: .1px;
+}
+section.faq .questions .left-questions .card {
+    padding: 10px 0;
+}
+section.faq .questions .right-questions .card {
+     padding: 10px 0;
+}   
+section.faq .questions .left-questions .card p {
+    font-weight: 700;
+    font-size: 22px;
+}
+section.faq .questions .right-questions .card p {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/*! FAQ end */
+
+
+/*! FOOTER start */
+
+
+footer .contain {
+    padding: 120px 100px 40px;
+}
+footer .contain h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 45px;
+}
+footer .contain h1 span {
+    font-weight: 700;
+    font-size: 45px;
+}
+footer .contain .portfolio {
+    
+    margin-top: 100px;
+    width: 100%;
+}
+
+footer .contain .portfolio .portfolio-right div {
+    margin-left: 125px;
+}
+footer .contain .portfolio .portfolio-right {
+    width: 485px;
+    margin-left: 150px;
+}
+footer .contain .portfolio .portfolio-left {
+    width: 375px;
+    margin-right: 150px;
+}
+
+
+footer .contain .portfolio .portfolio-left .mail a {
+    margin-left: 10px;
+}
+footer .contain .copyright {
+    margin-top: 150px;
+}
+footer .contain .copyright p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/*! FOOTER end */
+
+
+
+}
+
+@media(min-width:1200px) and (max-width:1400px) {
+    section.partner .jade .photo-jade {
+        width: 400px;
+    }
 }
 
 @media(min-width: 1400px) {
@@ -1728,31 +2371,31 @@ footer .contain .copyright p {
     }
 
 
-    .introduction {
+    .introduction .swiper .swiper-wrapper .swiper-slide {
         display: flex;
     }
 
-    .introduction .introduction-left-side h1 {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side h1 {
         font-size: 70px;
     }
 
-    .introduction .introduction-left-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side {
         padding: 20px 0;
     }
 
-    .introduction .introduction-right-side {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side {
         padding: 30px 0 20px 0;
     }
 
-    .introduction .introduction-left-side p {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side p {
         font-size: 24px;
     }
 
-    .introduction .introduction-right-side img {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-right-side img {
         width: 600px;
     }
 
-    .introduction .introduction-left-side p {
+    .introduction .swiper .swiper-wrapper .swiper-slide .introduction-left-side p {
         padding-right: 100px;
     }
 
@@ -2210,11 +2853,11 @@ section.faq .questions .left-questions .card {
 section.faq .questions .right-questions .card {
      padding: 10px 0;
 }   
-section.faq .questions .left-questions .card h4 {
+section.faq .questions .left-questions .card p {
     font-weight: 700;
     font-size: 24px;
 }
-section.faq .questions .right-questions .card h4 {
+section.faq .questions .right-questions .card p {
     font-weight: 700;
     font-size: 24px;
 }
@@ -2224,17 +2867,15 @@ section.faq .questions .right-questions .card h4 {
 /*! FOOTER start */
 
 
-footer .contain {
-    padding: 120px 100px 40px;
-}
+
 footer .contain h1 {
     margin: 0;
     font-weight: 700;
-    font-size: 54px;
+    font-size: 50px;
 }
 footer .contain h1 span {
     font-weight: 700;
-    font-size: 54px;
+    font-size: 50px;
 }
 footer .contain .portfolio {
     
